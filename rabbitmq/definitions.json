@@ -1,9 +1,4 @@
 {
-  "vhosts": [
-    {
-      "name": "/"
-    }
-  ],
   "exchanges": [
     {
       "name": "jenkins",
