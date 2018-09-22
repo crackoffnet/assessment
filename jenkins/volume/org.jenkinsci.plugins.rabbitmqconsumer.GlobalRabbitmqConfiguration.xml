@@ -3,7 +3,7 @@
   <enableConsumer>true</enableConsumer>
   <serviceUri>amqp://rabbitmq:5672</serviceUri>
   <userName>rabbitmq</userName>
-  <userPassword>{AQAAABAAAAAQ1nMlMhor8YpftxNp8ilbXYAfaUwYqbydZ9oLunnxd9k=}</userPassword>
+  <userPassword>{AQAAABAAAAAQ3VjAkwPG/Q633OjHWnlHvd5Bi+XXcK9LU1VsGMR6X+Y=}</userPassword>
   <watchdogPeriod>60000</watchdogPeriod>
   <consumeItems/>
   <enableDebug>false</enableDebug>

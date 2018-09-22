@@ -77,6 +77,10 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+#    environment:
+#      RABBITMQ_PASS: rabbitmq
+#      RABBITMQ_DEFAULT_USER: rabbitmq
+#      RABBITMQ_VHOST: "/"
     labels:
       NAME: "rabbitmq"
     networks:

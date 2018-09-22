@@ -35,7 +35,7 @@ try {
   }}
 
     stage(&apos;Publish&apos;) {
-step([$class: &apos;NexusPublisherBuildStep&apos;, nexusInstanceId: &apos;1E537C98-DEBA4155-3A2E7233-E6ABF1ED-16F5DDF3&apos;, nexusRepositoryId: &apos;maven-releases&apos;, packages: [[$class: &apos;MavenPackage&apos;, mavenAssetList: [[classifier: &apos;&apos;, extension: &apos;&apos;, filePath: &apos;java_app/target/log-generator-0.0.1-SNAPSHOT.jar&apos;]], mavenCoordinate: [artifactId: &apos;log-generator&apos;, groupId: &apos;com.github.vspiewak&apos;, packaging: &apos;jar&apos;, version: &apos;0.0.4&apos;]]]])
+step([$class: &apos;NexusPublisherBuildStep&apos;, nexusInstanceId: &apos;1E537C98-DEBA4155-3A2E7233-E6ABF1ED-16F5DDF3&apos;, nexusRepositoryId: &apos;maven-releases&apos;, packages: [[$class: &apos;MavenPackage&apos;, mavenAssetList: [[classifier: &apos;&apos;, extension: &apos;&apos;, filePath: &apos;java_app/target/log-generator-0.0.1-SNAPSHOT.jar&apos;]], mavenCoordinate: [artifactId: &apos;log-generator&apos;, groupId: &apos;com.github.vspiewak&apos;, packaging: &apos;jar&apos;, version: &apos;0.0.7&apos;]]]])
 
 rabbitMQPublisher data: &apos;&quot;state&quot;:&quot;COMPLETED&quot;&apos;, exchange: &apos;jenkins&apos;, rabbitName: &apos;rabbitmq&apos;, routingKey: &apos;&apos;
 

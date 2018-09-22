@@ -7,7 +7,7 @@
   <enableNotifier>true</enableNotifier>
   <serverUri>amqp://rabbitmq:5672</serverUri>
   <userName>rabbitmq</userName>
-  <userPassword>{AQAAABAAAAAQurp//pcklSGBGaEEQGYQ7wLlABJoqaXu4fcLZhNLR9s=}</userPassword>
+  <userPassword>{AQAAABAAAAAQalaf3n+9RXKjUuJTr+xfhsKkpyhDj6TKnFOKnCicFBc=}</userPassword>
   <exchangeName>default</exchangeName>
   <virtualHost>/</virtualHost>
   <routingKey></routingKey>
