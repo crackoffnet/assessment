@@ -1,0 +1,13 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vspiewak/log-generator # timeout=10
+Fetching upstream changes from https://github.com/vspiewak/log-generator
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vspiewak/log-generator +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 69e08ee702e0f927ee773a282ed5826e561a8456 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 69e08ee702e0f927ee773a282ed5826e561a8456
+Commit message: "Merge pull request #1 from ygrenzinger/patch-1"
+ > git rev-list --no-walk 69e08ee702e0f927ee773a282ed5826e561a8456 # timeout=10

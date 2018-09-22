@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nobuhiro
+Build-Jdk: 1.8.0_161
+Extension-Name: rabbitmq-consumer
+Specification-Title: A plugin that consume messages from RabbitMQ then
+  deliver listeners.
+Implementation-Title: rabbitmq-consumer
+Implementation-Version: 2.8
+Plugin-Class: org.jenkinsci.plugins.rabbitmqconsumer.RabbitMQConsumer
+Group-Id: org.jenkins-ci.plugins
+Short-Name: rabbitmq-consumer
+Long-Name: RabbitMQ Consumer Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/RabbitMQ+Consumer+Plugin
+Plugin-Version: 2.8
+Hudson-Version: 2.7.1
+Jenkins-Version: 2.7.1
+Plugin-Developers: rinrinne:rin_ne:rinrin.ne@gmail.com
+

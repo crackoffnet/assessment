@@ -1,0 +1,105 @@
+[java_app] Running shell script
++ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce) @ log-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log-generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ log-generator ---
+[INFO] 
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ log-generator ---
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.30 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, logback-core-1.0.13.jar define 349 overlappping classes: 
+[WARNING]   - ch.qos.logback.core.LayoutBase
+[WARNING]   - ch.qos.logback.core.net.ssl.SSL
+[WARNING]   - ch.qos.logback.core.spi.AbstractComponentTracker
+[WARNING]   - ch.qos.logback.core.util.OptionHelper
+[WARNING]   - ch.qos.logback.core.net.ssl.SSLConfigurableServerSocket
+[WARNING]   - ch.qos.logback.core.pattern.parser.TokenStream$TokenizerState
+[WARNING]   - ch.qos.logback.core.rolling.RollingPolicyBase
+[WARNING]   - ch.qos.logback.core.joran.action.ImplicitAction
+[WARNING]   - ch.qos.logback.core.joran.conditional.ElseAction
+[WARNING]   - ch.qos.logback.core.rolling.helper.FileFilterUtil$2
+[WARNING]   - 339 more...
+[WARNING] jcommander-1.30.jar, log-generator-0.0.1-SNAPSHOT.jar define 50 overlappping classes: 
+[WARNING]   - com.beust.jcommander.internal.JDK6Console
+[WARNING]   - com.beust.jcommander.IVariableArity
+[WARNING]   - com.beust.jcommander.IDefaultProvider
+[WARNING]   - com.beust.jcommander.converters.BaseConverter
+[WARNING]   - com.beust.jcommander.converters.FileConverter
+[WARNING]   - com.beust.jcommander.ResourceBundle
+[WARNING]   - com.beust.jcommander.converters.IParameterSplitter
+[WARNING]   - com.beust.jcommander.JCommander$DefaultVariableArity
+[WARNING]   - com.beust.jcommander.converters.ISO8601DateConverter
+[WARNING]   - com.beust.jcommander.FuzzyMap
+[WARNING]   - 40 more...
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, logback-classic-1.0.13.jar define 170 overlappping classes: 
+[WARNING]   - ch.qos.logback.classic.joran.action.ConsolePluginAction
+[WARNING]   - ch.qos.logback.classic.util.LevelToSyslogSeverity
+[WARNING]   - ch.qos.logback.classic.spi.ClassPackagingData
+[WARNING]   - ch.qos.logback.classic.joran.action.EvaluatorAction
+[WARNING]   - ch.qos.logback.classic.joran.action.ConfigurationAction
+[WARNING]   - ch.qos.logback.classic.spi.StackTraceElementProxy
+[WARNING]   - ch.qos.logback.classic.sift.ContextBasedDiscriminator
+[WARNING]   - ch.qos.logback.classic.gaffer.ConfigurationDelegate$_copyContributions_closure2
+[WARNING]   - ch.qos.logback.classic.pattern.RootCauseFirstThrowableProxyConverter
+[WARNING]   - ch.qos.logback.classic.spi.LoggerContextAware
+[WARNING]   - 160 more...
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, slf4j-api-1.7.5.jar define 23 overlappping classes: 
+[WARNING]   - org.slf4j.ILoggerFactory
+[WARNING]   - org.slf4j.helpers.BasicMDCAdapter
+[WARNING]   - org.slf4j.MDC
+[WARNING]   - org.slf4j.spi.MDCAdapter
+[WARNING]   - org.slf4j.LoggerFactory
+[WARNING]   - org.slf4j.helpers.Util
+[WARNING]   - org.slf4j.helpers.NOPLogger
+[WARNING]   - org.slf4j.helpers.SubstituteLoggerFactory
+[WARNING]   - org.slf4j.helpers.NOPLoggerFactory
+[WARNING]   - org.slf4j.helpers.NamedLoggerBase
+[WARNING]   - 13 more...
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar with /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ log-generator ---
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.256 s
+[INFO] Finished at: 2018-09-21T23:39:36+00:00
+[INFO] Final Memory: 14M/308M
+[INFO] ------------------------------------------------------------------------

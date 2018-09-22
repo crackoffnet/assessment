@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: gustaflh
+Build-Jdk: 1.8.0_171
+Extension-Name: mq-notifier
+Specification-Title: Publishes messages on an MQ server
+Implementation-Title: mq-notifier
+Implementation-Version: 1.2.6
+Plugin-Class: com.sonymobile.jenkins.plugins.mq.mqnotifier.MQNotifierC
+ onfig
+Group-Id: com.sonymobile.jenkins.plugins.mq
+Short-Name: mq-notifier
+Long-Name: MQ Notifier
+Url: https://wiki.jenkins-ci.org/display/JENKINS/MQ+Notifier+Plugin
+Plugin-Version: 1.2.6
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Dependencies: matrix-project:1.4
+Plugin-Developers: Örjan Percy:orjanpercy:orjan.percy@sonymobile.com,
+ Gustaf Lundh:gustafl:gustaf.lundh@gmail.com,Tomas Westling:t_westling
+ :tomas.westling@sonymobile.com
+

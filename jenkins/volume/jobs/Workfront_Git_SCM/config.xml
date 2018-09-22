@@ -1,0 +1,70 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.25">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec></spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.55">
+    <script>node() {
+try {
+    notifyBuild(&apos;STARTED&apos;)
+
+    stage (&apos;Pull git repositories&apos;) {
+	//checkout from GitHub repository master branch to folder java_app
+    checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: &apos;RelativeTargetDirectory&apos;, relativeTargetDir: &apos;java_app&apos;]], submoduleCfg: [], userRemoteConfigs: [[url: &apos;https://github.com/vspiewak/log-generator&apos;]]])
+    }
+
+    stage (&apos;Change dir and Maven build&apos;) {
+    dir (&apos;java_app&apos;) {sh &quot;mvn install&quot;}
+    }
+
+    stage(&apos;build &amp; SonarQube Scan&apos;) {
+    dir (&apos;java_app&apos;) {
+    withSonarQubeEnv(&apos;sonarqube&apos;) {
+      sh &apos;mvn clean package sonar:sonar&apos;
+    } // SonarQube taskId is automatically attached to the pipeline context
+  }}
+
+    stage(&apos;Publish&apos;) {
+step([$class: &apos;NexusPublisherBuildStep&apos;, nexusInstanceId: &apos;1E537C98-DEBA4155-3A2E7233-E6ABF1ED-16F5DDF3&apos;, nexusRepositoryId: &apos;maven-releases&apos;, packages: [[$class: &apos;MavenPackage&apos;, mavenAssetList: [[classifier: &apos;&apos;, extension: &apos;&apos;, filePath: &apos;java_app/target/log-generator-0.0.1-SNAPSHOT.jar&apos;]], mavenCoordinate: [artifactId: &apos;log-generator&apos;, groupId: &apos;com.github.vspiewak&apos;, packaging: &apos;jar&apos;, version: &apos;0.0.4&apos;]]]])
+
+rabbitMQPublisher data: &apos;&quot;state&quot;:&quot;COMPLETED&quot;&apos;, exchange: &apos;jenkins&apos;, rabbitName: &apos;rabbitmq&apos;, routingKey: &apos;&apos;
+
+
+} 
+
+} catch (e) {
+// If there was an exception thrown, the build failed
+currentBuild.result = &quot;FAILED&quot;
+throw e
+} finally {
+// Success or failure, always send notifications
+notifyBuild(currentBuild.result)
+}
+}
+
+def notifyBuild(String buildStatus = &apos;STARTED&apos;) {
+// build status of null means successful
+buildStatus =  buildStatus ?: &apos;SUCCESSFUL&apos;
+
+//cleanWs()
+emailext attachLog: true, body: &apos;&apos;&apos;$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+Check console output at $BUILD_URL to view the results.&apos;&apos;&apos;, 
+subject: &quot;${buildStatus}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;, 
+to: &apos;crackoffnet@gmail.com&apos;
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

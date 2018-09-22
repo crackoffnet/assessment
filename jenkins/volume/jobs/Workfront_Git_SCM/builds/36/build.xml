@@ -1,0 +1,211 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.25">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.11">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.55">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.tasks.MailMessageIdAction plugin="mailer@1.21"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.3">
+              <sha1>69e08ee702e0f927ee773a282ed5826e561a8456</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>36</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/vspiewak/log-generator</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/workspace/Workfront_Git_SCM</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/vspiewak/log-generator</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <hudson.plugins.sonar.action.SonarMarkerAction plugin="sonar@2.8.1"/>
+    <hudson.plugins.sonar.action.SonarAnalysisAction plugin="sonar@2.8.1">
+      <installationName>sonarqube</installationName>
+      <ceTaskId>AWX-U-l70dN4TpNzHiYg</ceTaskId>
+      <url>http://sonarqube:9000/dashboard/index/com.github.vspiewak:log-generator</url>
+      <serverUrl>http://sonarqube:9000</serverUrl>
+      <isNew>true</isNew>
+      <isSkipped>false</isSkipped>
+    </hudson.plugins.sonar.action.SonarAnalysisAction>
+    <hudson.plugins.sonar.action.SonarCacheAction plugin="sonar@2.8.1">
+      <infoByTaskId>
+        <entry>
+          <string>AWX-U-l70dN4TpNzHiYg</string>
+          <hudson.plugins.sonar.client.ProjectInformation>
+            <created>1537570239153</created>
+            <name>log-generator</name>
+            <url>http://sonarqube:9000/dashboard/index/com.github.vspiewak:log-generator</url>
+            <status>OK</status>
+            <ceStatus>success</ceStatus>
+            <ceUrl>http://sonarqube:9000/api/ce/task?id=AWX-U-l70dN4TpNzHiYg</ceUrl>
+          </hudson.plugins.sonar.client.ProjectInformation>
+        </entry>
+      </infoByTaskId>
+      <lastRequest>1537570239167</lastRequest>
+      <lastProjInfo>
+        <hudson.plugins.sonar.client.ProjectInformation reference="../../infoByTaskId/entry/hudson.plugins.sonar.client.ProjectInformation"/>
+      </lastProjInfo>
+    </hudson.plugins.sonar.action.SonarCacheAction>
+  </actions>
+  <queueId>71</queueId>
+  <timestamp>1537570221857</timestamp>
+  <startTime>1537570221872</startTime>
+  <result>FAILURE</result>
+  <duration>17203</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node() {
+try {
+    notifyBuild(&apos;STARTED&apos;)
+
+    stage (&apos;Pull git repositories&apos;) {
+	//checkout from GitHub repository master branch to folder java_app
+    checkout([$class: &apos;GitSCM&apos;, branches: [[name: &apos;*/master&apos;]], doGenerateSubmoduleConfigurations: false, extensions: [[$class: &apos;RelativeTargetDirectory&apos;, relativeTargetDir: &apos;java_app&apos;]], submoduleCfg: [], userRemoteConfigs: [[url: &apos;https://github.com/vspiewak/log-generator&apos;]]])
+    }
+    stage (&apos;Change dir and Maven build&apos;) {
+    dir (&apos;java_app&apos;) {sh &quot;mvn install&quot;}
+    }
+    stage(&apos;build &amp; SonarQube Scan&apos;) {
+    dir (&apos;java_app&apos;) {
+    withSonarQubeEnv(&apos;sonarqube&apos;) {
+      sh &apos;mvn clean package sonar:sonar&apos;
+    } // SonarQube taskId is automatically attached to the pipeline context
+  }}
+
+stage(&apos;Publish&apos;) {
+ def pom = readMavenPom file: &apos;pom.xml&apos;
+ nexusPublisher nexusInstanceId: &apos;nexusAdmin&apos;, \
+  nexusRepositoryId: &apos;releases&apos;, \
+  packages: [[$class: &apos;MavenPackage&apos;, \
+  mavenAssetList: [[classifier: &apos;&apos;, extension: &apos;&apos;, \
+  filePath: &quot;target/${pom.artifactId}-${pom.version}.${pom.packaging}&quot;]], \
+  mavenCoordinate: [artifactId: &quot;${pom.artifactId}&quot;, \
+  groupId: &quot;${pom.groupId}&quot;, \
+  packaging: &quot;${pom.packaging}&quot;, \
+  version: &quot;${pom.version}&quot;]]]
+}
+
+
+
+} catch (e) {
+// If there was an exception thrown, the build failed
+currentBuild.result = &quot;FAILED&quot;
+throw e
+} finally {
+// Success or failure, always send notifications
+notifyBuild(currentBuild.result)
+}
+}
+
+def notifyBuild(String buildStatus = &apos;STARTED&apos;) {
+// build status of null means successful
+buildStatus =  buildStatus ?: &apos;SUCCESSFUL&apos;
+
+//cleanWs()
+emailext attachLog: true, body: &apos;&apos;&apos;$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+Check console output at $BUILD_URL to view the results.&apos;&apos;&apos;, 
+subject: &quot;${buildStatus}: Job &apos;${env.JOB_NAME} [${env.BUILD_NUMBER}]&apos;&quot;, 
+to: &apos;garegin.ayvazyan@hotmail.com&apos;
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1152171156</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1511879478</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2378212727</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>920005044</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>208420760</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>41</iota>
+    <head>1:41</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/vspiewak/log-generator</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+            <relativeTargetDir>java_app</relativeTargetDir>
+          </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/jenkins_home/workspace/Workfront_Git_SCM</workspace>
+      <changelogFile>/var/jenkins_home/jobs/Workfront_Git_SCM/builds/36/changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

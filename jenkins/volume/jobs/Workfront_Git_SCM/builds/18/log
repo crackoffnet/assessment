@@ -1,0 +1,127 @@
+Started by user [8mha:////4EAHvVihVrLa5saKr3FGjUfCfmVGvFanZYZiKK/SR2xFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKK2vVLpcJb0ykYmByZOBLSc1L70kw4eBubQop4RByCcrsSxRPycxL10/uKQoMy/dGmicFJpxzhAa3d4CIEOghIFbv7Q4tUg/MSU3Mw8Ai0KlHMAAAAA=[0mGaregin Ayvazyan
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4EU6seAfScyYNH2BqzGvppynSW73oJ9F/zAqPK3sQ/xVAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKK2vVLpcJb0ykYmByZOBLSc1L70kw4eBubQop4RByCcrsSxRPycxL10/uKQoMy/dGmicFJpxzhAa3d4CIIO9hEFYPzk/t6C0JLVIXyM3sRhIa+oDAFAjsbDIAAAA[0mJenkins in /var/jenkins_home/workspace/Workfront_Git_SCM
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Pull git repositories)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning repository https://github.com/vspiewak/log-generator
+ > git init /var/jenkins_home/workspace/Workfront_Git_SCM/java_app # timeout=10
+Fetching upstream changes from https://github.com/vspiewak/log-generator
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vspiewak/log-generator +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/vspiewak/log-generator # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/vspiewak/log-generator # timeout=10
+Fetching upstream changes from https://github.com/vspiewak/log-generator
+ > git fetch --tags --progress https://github.com/vspiewak/log-generator +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 69e08ee702e0f927ee773a282ed5826e561a8456 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 69e08ee702e0f927ee773a282ed5826e561a8456
+Commit message: "Merge pull request #1 from ygrenzinger/patch-1"
+ > git rev-list --no-walk 69e08ee702e0f927ee773a282ed5826e561a8456 # timeout=10
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Change dir and Maven build)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/Workfront_Git_SCM/java_app
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[java_app] Running shell script
++ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce) @ log-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log-generator ---
+[INFO] Compiling 7 source files to /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log-generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ log-generator ---
+[INFO] Building jar: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ log-generator ---
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.30 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar with /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ log-generator ---
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.559 s
+[INFO] Finished at: 2018-09-21T20:45:27+00:00
+[INFO] Final Memory: 18M/211M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (build & SonarQube Scan)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonarqube
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[Workfront_Git_SCM] Running shell script
++ mvn clean package sonar:sonar
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.082 s
+[INFO] Finished at: 2018-09-21T20:45:29+00:00
+[INFO] Final Memory: 6M/240M
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/var/jenkins_home/workspace/Workfront_Git_SCM). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+WARN: Unable to locate 'report-task.txt' in the workspace. Did the SonarScanner succedeed?
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

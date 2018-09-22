@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.21">
+  <smtpAuthUsername>crackoffnet</smtpAuthUsername>
+  <smtpAuthPassword>{AQAAABAAAAAgvFdMjD82Q8C1iBPcQ4vLH3gozEv6XV0u8nzgZPahhgOMiryZFIEnn0OS04o+f4Gs}</smtpAuthPassword>
+  <replyToAddress>crackoffnet@gmail.com</replyToAddress>
+  <smtpHost>smtp.gmail.com</smtpHost>
+  <useSsl>true</useSsl>
+  <smtpPort>465</smtpPort>
+  <charset>UTF-8</charset>
+</hudson.tasks.Mailer_-DescriptorImpl>

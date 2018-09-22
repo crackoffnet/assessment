@@ -1,0 +1,203 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.20">
+  <node class="cps.n.StepEndNode" plugin="workflow-cps@2.55">
+    <parentIds>
+      <string>39</string>
+    </parentIds>
+    <id>40</id>
+    <startId>3</startId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.29">
+      <startTime>1537646506455</startTime>
+    </wf.a.TimingAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.29">
+      <error class="java.io.IOException">
+        <detailMessage>Upload of maven component with GAV [com.github.vspiewak:log-generator:0.0.1-SNAPSHOT] failed</detailMessage>
+        <cause class="java.io.IOException">
+          <detailMessage>com.sonatype.nexus.api.exception.RepositoryManagerException: Upload component was unsuccessful (400 response from server)</detailMessage>
+          <cause class="com.sonatype.nexus.api.exception.RepositoryManagerException" plugin="nexus-jenkins-plugin@3.3.20180912-170211.be90294">
+            <detailMessage>Upload component was unsuccessful (400 response from server)</detailMessage>
+            <cause class="com.sonatype.nexus.api.dh">
+              <detailMessage>Bad Request</detailMessage>
+              <stackTrace>
+                <trace>com.sonatype.nexus.api.di.handleResponse(SourceFile:51)</trace>
+                <trace>org.apache.http.impl.client.CloseableHttpClient.execute(SourceFile:223)</trace>
+                <trace>org.apache.http.impl.client.CloseableHttpClient.execute(SourceFile:165)</trace>
+                <trace>com.sonatype.nexus.api.dd.a(SourceFile:84)</trace>
+                <trace>com.sonatype.nexus.api.dd.a(SourceFile:65)</trace>
+                <trace>com.sonatype.nexus.api.dc.upload(SourceFile:152)</trace>
+                <trace>com.sonatype.nexus.api.repository.v3.RepositoryManagerV3Client$upload$0.call(Unknown Source)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:74)</trace>
+                <trace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+                <trace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+                <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+                <trace>java.lang.reflect.Method.invoke(Method.java:498)</trace>
+                <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)</trace>
+                <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+                <trace>org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)</trace>
+                <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)</trace>
+                <trace>groovy.lang.Closure.call(Closure.java:414)</trace>
+                <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5276)</trace>
+                <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2117)</trace>
+                <trace>org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)</trace>
+                <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)</trace>
+                <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)</trace>
+                <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3.upload(ComponentUploaderNxrm3.groovy:54)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$upload.callCurrent(Unknown Source)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader.uploadComponents(ComponentUploader.groovy:84)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader$uploadComponents.call(Unknown Source)</trace>
+                <trace>org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep.perform(NexusPublisherBuildStep.groovy:70)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:80)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:67)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+                <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+                <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+                <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+                <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+                <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+                <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+                <trace>java.lang.Thread.run(Thread.java:748)</trace>
+              </stackTrace>
+              <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+                <c class="list"/>
+                <list reference="../c"/>
+              </suppressedExceptions>
+              <statusCode>400</statusCode>
+              <a>[{&quot;id&quot;:&quot;*&quot;,&quot;message&quot;:&quot;Version policy mismatch, cannot upload SNAPSHOT content to RELEASE repositories for file &apos;0&apos;&quot;}]</a>
+            </cause>
+            <stackTrace>
+              <trace>com.sonatype.nexus.api.dd.a(SourceFile:106)</trace>
+              <trace>com.sonatype.nexus.api.dd.a(SourceFile:87)</trace>
+              <trace>com.sonatype.nexus.api.dd.a(SourceFile:65)</trace>
+              <trace>com.sonatype.nexus.api.dc.upload(SourceFile:152)</trace>
+              <trace>com.sonatype.nexus.api.repository.v3.RepositoryManagerV3Client$upload$0.call(Unknown Source)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:74)</trace>
+              <trace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+              <trace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+              <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+              <trace>java.lang.reflect.Method.invoke(Method.java:498)</trace>
+              <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)</trace>
+              <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+              <trace>org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)</trace>
+              <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)</trace>
+              <trace>groovy.lang.Closure.call(Closure.java:414)</trace>
+              <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5276)</trace>
+              <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2117)</trace>
+              <trace>org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)</trace>
+              <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3.upload(ComponentUploaderNxrm3.groovy:54)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$upload.callCurrent(Unknown Source)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader.uploadComponents(ComponentUploader.groovy:84)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader$uploadComponents.call(Unknown Source)</trace>
+              <trace>org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep.perform(NexusPublisherBuildStep.groovy:70)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:80)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:67)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+              <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+              <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+              <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+              <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+              <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+              <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+              <trace>java.lang.Thread.run(Thread.java:748)</trace>
+            </stackTrace>
+            <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions"/>
+            <responseStatus>
+              <value class="int">400</value>
+            </responseStatus>
+            <responseMessage/>
+          </cause>
+          <stackTrace>
+            <trace>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</trace>
+            <trace>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</trace>
+            <trace>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</trace>
+            <trace>java.lang.reflect.Constructor.newInstance(Constructor.java:423)</trace>
+            <trace>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)</trace>
+            <trace>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)</trace>
+            <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:77)</trace>
+            <trace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+            <trace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+            <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+            <trace>java.lang.reflect.Method.invoke(Method.java:498)</trace>
+            <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)</trace>
+            <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+            <trace>org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)</trace>
+            <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)</trace>
+            <trace>groovy.lang.Closure.call(Closure.java:414)</trace>
+            <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5276)</trace>
+            <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2117)</trace>
+            <trace>org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)</trace>
+            <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)</trace>
+            <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)</trace>
+            <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3.upload(ComponentUploaderNxrm3.groovy:54)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$upload.callCurrent(Unknown Source)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader.uploadComponents(ComponentUploader.groovy:84)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader$uploadComponents.call(Unknown Source)</trace>
+            <trace>org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep.perform(NexusPublisherBuildStep.groovy:70)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:80)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:67)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+            <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+            <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+            <trace>java.lang.Thread.run(Thread.java:748)</trace>
+          </stackTrace>
+          <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/cause/suppressedExceptions"/>
+        </cause>
+        <stackTrace>
+          <trace>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</trace>
+          <trace>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</trace>
+          <trace>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</trace>
+          <trace>java.lang.reflect.Constructor.newInstance(Constructor.java:423)</trace>
+          <trace>org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:255)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:87)</trace>
+          <trace>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</trace>
+          <trace>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</trace>
+          <trace>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</trace>
+          <trace>java.lang.reflect.Method.invoke(Method.java:498)</trace>
+          <trace>org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)</trace>
+          <trace>groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)</trace>
+          <trace>org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)</trace>
+          <trace>groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)</trace>
+          <trace>groovy.lang.Closure.call(Closure.java:414)</trace>
+          <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5276)</trace>
+          <trace>org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2117)</trace>
+          <trace>org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)</trace>
+          <trace>org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3.upload(ComponentUploaderNxrm3.groovy:54)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$upload.callCurrent(Unknown Source)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader.uploadComponents(ComponentUploader.groovy:84)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.ComponentUploader$uploadComponents.call(Unknown Source)</trace>
+          <trace>org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep.perform(NexusPublisherBuildStep.groovy:70)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:80)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:67)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)</trace>
+          <trace>hudson.security.ACL.impersonate(ACL.java:290)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/cause/cause/suppressedExceptions"/>
+      </error>
+    </wf.a.ErrorAction>
+    <wf.a.ErrorAction plugin="workflow-api@2.29">
+      <error class="java.io.IOException" reference="../../wf.a.ErrorAction/error"/>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

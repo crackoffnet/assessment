@@ -1,0 +1,27 @@
+[Workfront_Git_SCM] Running shell script
++ mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar
+[INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.2/sonar-maven-plugin-3.2.pom
+3/9 KB   5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.2/sonar-maven-plugin-3.2.pom (9 KB at 6.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/36/parent-36.pom
+3/29 KB   6/29 KB   9/29 KB   11/29 KB   14/29 KB   16/29 KB   19/29 KB   22/29 KB   25/29 KB   27/29 KB   29/29 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/36/parent-36.pom (29 KB at 53.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.2/sonar-maven-plugin-3.2.jar
+3/52 KB    5/52 KB   8/52 KB   11/52 KB   13/52 KB   16/52 KB   19/52 KB   21/52 KB   24/52 KB   27/52 KB   29/52 KB   32/52 KB   36/52 KB   40/52 KB   44/52 KB   48/52 KB   52/52 KB   52/52 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.2/sonar-maven-plugin-3.2.jar (52 KB at 98.2 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.855 s
+[INFO] Finished at: 2018-09-21T20:35:13+00:00
+[INFO] Final Memory: 10M/200M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar (default-cli): Goal requires a project to execute but there is no POM in this directory (/var/jenkins_home/workspace/Workfront_Git_SCM). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException

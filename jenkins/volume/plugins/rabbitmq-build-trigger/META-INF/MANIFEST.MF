@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nobuhiro
+Build-Jdk: 1.7.0_80
+Extension-Name: rabbitmq-build-trigger
+Specification-Title: A plugin that trigger build by message from Rabbi
+ tMQ.
+Implementation-Title: rabbitmq-build-trigger
+Implementation-Version: 2.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: rabbitmq-build-trigger
+Long-Name: RabbitMQ Build Trigger Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/RabbitMQ+Build+Trigger
+ +Plugin
+Plugin-Version: 2.5
+Hudson-Version: 1.625
+Jenkins-Version: 1.625
+Plugin-Dependencies: rabbitmq-consumer:2.5
+Plugin-Developers: rinrinne:rin_ne:rinrin.ne@gmail.com
+

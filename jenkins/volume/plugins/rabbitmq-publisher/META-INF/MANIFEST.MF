@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: b.legall
+Build-Jdk: 1.8.0_161
+Extension-Name: rabbitmq-publisher
+Specification-Title: Allows user to publish messages to Rabbit MQ
+Implementation-Title: rabbitmq-publisher
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: rabbitmq-publisher
+Long-Name: Rabbit-MQ Publisher Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/RabbitMQ+Publisher+Plugin
+Plugin-Version: 1.0
+Hudson-Version: 2.99
+Jenkins-Version: 2.99
+Plugin-Developers: Le Gall Benoît:legall_benoit:legall.benoit@gmail.com
+

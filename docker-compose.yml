@@ -1,0 +1,149 @@
+version: '3.1' 
+services:
+  
+  jenkins:
+    container_name: jenkins
+    build: jenkins/
+    hostname: jenkins
+    restart: always
+    ports:
+      - "50000:8080"
+    restart: always
+    volumes:
+      - ./jenkins/volume:/var/jenkins_home
+    networks:
+      workfront_network:
+        aliases:
+          - jenkins
+  
+  logstash:
+    image: logstash
+    container_name: logstash
+    volumes:
+      - ./logstash/config/:/config
+    command: logstash -f config/logstash.conf
+    ports:
+      - "5044:5044"
+    restart: always
+    links:
+      - elasticsearch
+    depends_on:
+      - elasticsearch
+    networks:
+      workfront_network:
+        aliases:
+          - logstash
+
+  elasticsearch:
+    image: elasticsearch:2
+    container_name: elasticsearch
+    ports:
+      - "9200:9200"
+    restart: always
+    volumes:
+      - ./es_data/es_data:/usr/share/elasticsearch/data/
+    environment:
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+#    sysctls:
+#      - vm.max_map_count=262144
+    privileged: true
+    networks:
+      workfront_network:
+        aliases:
+          - elasticsearch
+
+  kibana:
+    image: kibana:4
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    restart: always
+    links:
+      - elasticsearch
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      workfront_network:
+        aliases:
+          - kibana
+
+  rabbitmq:
+    container_name: rabbitmq
+    build: rabbitmq/
+    hostname: rabbitmq
+    restart: always
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    labels:
+      NAME: "rabbitmq"
+    networks:
+      workfront_network:
+        aliases:
+          - rabbitmq
+
+  sonarqube:
+    image: sonarqube:6.7.1
+    restart: always
+    hostname: sonarqube
+    container_name: sonarqube
+    environment:
+      - SONARQUBE_JDBC_USERNAME=sonar
+      - SONARQUBE_JDBC_PASSWORD=sonar
+      - SONARQUBE_JDBC_URL=jdbc:postgresql://db:5432/sonarqube
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+    volumes:
+      - sonarqube_conf:/opt/sonarqube/conf
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+    networks:
+      workfront_network:
+        aliases:
+          - sonarqube
+
+  db:
+    image: postgres:10.1
+    container_name: postgres
+    hostname: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+      - POSTGRES_DB=sonarqube
+    volumes:
+      - sonarqube_db:/var/lib/postgresql
+      - postgresql_data:/var/lib/postgresql/data
+    networks:
+      workfront_network:
+        aliases:
+          - postgres
+
+  nexus:
+    image: sonatype/nexus3
+    container_name: nexus
+    hostname: nexus
+    volumes:
+      - "nexus-data:/nexus-data"
+    ports:
+      - "8081:8081"
+    networks:
+      workfront_network:
+        aliases:
+          - nexus
+
+
+volumes:
+  postgresql_data:
+  sonarqube_bundled-plugins:
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_db:
+  sonarqube_extensions:
+  nexus-data:
+networks:
+  workfront_network:

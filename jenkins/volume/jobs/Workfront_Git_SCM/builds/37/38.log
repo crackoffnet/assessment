@@ -1,0 +1,3 @@
+Uploading Maven asset with groupId: com.github.vspiewak artifactId: log-generator version: 0.0.1-SNAPSHOT To repository: releases
+Upload of maven component with GAV [com.github.vspiewak:log-generator:0.0.1-SNAPSHOT] failed
+Failing build due to failure to upload file to Nexus Repository Manager Publisher

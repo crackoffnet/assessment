@@ -1,0 +1,369 @@
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4EU6seAfScyYNH2BqzGvppynSW73oJ9F/zAqPK3sQ/xVAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKK2vVLpcJb0ykYmByZOBLSc1L70kw4eBubQop4RByCcrsSxRPycxL10/uKQoMy/dGmicFJpxzhAa3d4CIIO9hEFYPzk/t6C0JLVIXyM3sRhIa+oDAFAjsbDIAAAA[0mJenkins in /var/jenkins_home/workspace/Workfront_Git_SCM
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Pull git repositories)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/vspiewak/log-generator # timeout=10
+Fetching upstream changes from https://github.com/vspiewak/log-generator
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/vspiewak/log-generator +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 69e08ee702e0f927ee773a282ed5826e561a8456 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 69e08ee702e0f927ee773a282ed5826e561a8456
+Commit message: "Merge pull request #1 from ygrenzinger/patch-1"
+ > git rev-list --no-walk 69e08ee702e0f927ee773a282ed5826e561a8456 # timeout=10
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Change dir and Maven build)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/Workfront_Git_SCM/java_app
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[java_app] Running shell script
++ mvn install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce) @ log-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log-generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ log-generator ---
+[INFO] 
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ log-generator ---
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.30 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, logback-core-1.0.13.jar define 349 overlappping classes: 
+[WARNING]   - ch.qos.logback.core.LayoutBase
+[WARNING]   - ch.qos.logback.core.net.ssl.SSL
+[WARNING]   - ch.qos.logback.core.spi.AbstractComponentTracker
+[WARNING]   - ch.qos.logback.core.util.OptionHelper
+[WARNING]   - ch.qos.logback.core.net.ssl.SSLConfigurableServerSocket
+[WARNING]   - ch.qos.logback.core.pattern.parser.TokenStream$TokenizerState
+[WARNING]   - ch.qos.logback.core.rolling.RollingPolicyBase
+[WARNING]   - ch.qos.logback.core.joran.action.ImplicitAction
+[WARNING]   - ch.qos.logback.core.joran.conditional.ElseAction
+[WARNING]   - ch.qos.logback.core.rolling.helper.FileFilterUtil$2
+[WARNING]   - 339 more...
+[WARNING] jcommander-1.30.jar, log-generator-0.0.1-SNAPSHOT.jar define 50 overlappping classes: 
+[WARNING]   - com.beust.jcommander.internal.JDK6Console
+[WARNING]   - com.beust.jcommander.IVariableArity
+[WARNING]   - com.beust.jcommander.IDefaultProvider
+[WARNING]   - com.beust.jcommander.converters.BaseConverter
+[WARNING]   - com.beust.jcommander.converters.FileConverter
+[WARNING]   - com.beust.jcommander.ResourceBundle
+[WARNING]   - com.beust.jcommander.converters.IParameterSplitter
+[WARNING]   - com.beust.jcommander.JCommander$DefaultVariableArity
+[WARNING]   - com.beust.jcommander.converters.ISO8601DateConverter
+[WARNING]   - com.beust.jcommander.FuzzyMap
+[WARNING]   - 40 more...
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, logback-classic-1.0.13.jar define 170 overlappping classes: 
+[WARNING]   - ch.qos.logback.classic.joran.action.ConsolePluginAction
+[WARNING]   - ch.qos.logback.classic.util.LevelToSyslogSeverity
+[WARNING]   - ch.qos.logback.classic.spi.ClassPackagingData
+[WARNING]   - ch.qos.logback.classic.joran.action.EvaluatorAction
+[WARNING]   - ch.qos.logback.classic.joran.action.ConfigurationAction
+[WARNING]   - ch.qos.logback.classic.spi.StackTraceElementProxy
+[WARNING]   - ch.qos.logback.classic.sift.ContextBasedDiscriminator
+[WARNING]   - ch.qos.logback.classic.gaffer.ConfigurationDelegate$_copyContributions_closure2
+[WARNING]   - ch.qos.logback.classic.pattern.RootCauseFirstThrowableProxyConverter
+[WARNING]   - ch.qos.logback.classic.spi.LoggerContextAware
+[WARNING]   - 160 more...
+[WARNING] log-generator-0.0.1-SNAPSHOT.jar, slf4j-api-1.7.5.jar define 23 overlappping classes: 
+[WARNING]   - org.slf4j.ILoggerFactory
+[WARNING]   - org.slf4j.helpers.BasicMDCAdapter
+[WARNING]   - org.slf4j.MDC
+[WARNING]   - org.slf4j.spi.MDCAdapter
+[WARNING]   - org.slf4j.LoggerFactory
+[WARNING]   - org.slf4j.helpers.Util
+[WARNING]   - org.slf4j.helpers.NOPLogger
+[WARNING]   - org.slf4j.helpers.SubstituteLoggerFactory
+[WARNING]   - org.slf4j.helpers.NOPLoggerFactory
+[WARNING]   - org.slf4j.helpers.NamedLoggerBase
+[WARNING]   - 13 more...
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar with /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ log-generator ---
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml to /root/.m2/repository/com/github/vspiewak/log-generator/0.0.1-SNAPSHOT/log-generator-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.293 s
+[INFO] Finished at: 2018-09-21T22:06:13+00:00
+[INFO] Final Memory: 13M/304M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (build & SonarQube Scan)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/Workfront_Git_SCM/java_app
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] withSonarQubeEnv
+Injecting SonarQube environment variables using the configuration: sonarqube
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] sh
+[java_app] Running shell script
++ mvn clean package sonar:sonar
+[INFO] Scanning for projects...
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ log-generator ---
+[INFO] Deleting /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce) @ log-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log-generator ---
+[INFO] Compiling 7 source files to /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log-generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ log-generator ---
+[INFO] Building jar: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ log-generator ---
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.30 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar with /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ log-generator ---
+[INFO] User cache: /root/.sonar/cache
+[INFO] SonarQube version: 6.7.1
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=52ms
+[INFO] Server id: AWX9hAoyhqGHiu3x7V-G
+[INFO] User cache: /root/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=46ms
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=54ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=16ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=283ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=17ms
+[INFO] Project key: com.github.vspiewak:log-generator
+[INFO] -------------  Scan log-generator
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=28ms
+[INFO] Base dir: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app
+[INFO] Working dir: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/sonar
+[INFO] Source paths: dependency-reduced-pom.xml, src/main/java
+[INFO] Source encoding: UTF-8, default locale: en
+[INFO] Index files
+[INFO] 8 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 6
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=7ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 7 source files to be analyzed
+[INFO] 7/7 source files have been analyzed
+[INFO] Java Main Files AST scan (done) | time=1276ms
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=0ms
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1830ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=1ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=1ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=48ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=130ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=24ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=35ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 0/1 files analyzed
+[WARNING] Missing blame information for the following files:
+[WARNING]   * dependency-reduced-pom.xml
+[WARNING] This may lead to missing/broken features in SonarQube
+[INFO] 3 files had no CPD blocks
+[INFO] Calculating CPD for 4 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 65ms, dir size=112 KB
+[INFO] Analysis reports compressed in 16ms, zip size=39 KB
+[INFO] Analysis report uploaded in 45ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://sonarqube:9000/dashboard/index/com.github.vspiewak:log-generator
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://sonarqube:9000/api/ce/task?id=AWX-K2WK0dN4TpNzHiYW
+[INFO] Task total time: 3.908 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.675 s
+[INFO] Finished at: 2018-09-21T22:06:21+00:00
+[INFO] Final Memory: 41M/601M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // withSonarQubeEnv
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // dir
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Publish)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] step
+Uploading Maven asset with groupId: com.github.vspiewak artifactId: log-generator version: 0.0.1-SNAPSHOT To repository: maven-releases
+Upload of maven component with GAV [com.github.vspiewak:log-generator:0.0.1-SNAPSHOT] failed
+Failing build due to failure to upload file to Nexus Repository Manager Publisher
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+com.sonatype.nexus.api.dh: Bad Request
+	at com.sonatype.nexus.api.di.handleResponse(SourceFile:51)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(SourceFile:223)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(SourceFile:165)
+	at com.sonatype.nexus.api.dd.a(SourceFile:84)
+Caused: com.sonatype.nexus.api.exception.RepositoryManagerException: Upload component was unsuccessful (400 response from server)
+	at com.sonatype.nexus.api.dd.a(SourceFile:106)
+	at com.sonatype.nexus.api.dd.a(SourceFile:87)
+	at com.sonatype.nexus.api.dd.a(SourceFile:65)
+	at com.sonatype.nexus.api.dc.upload(SourceFile:152)
+	at com.sonatype.nexus.api.repository.v3.RepositoryManagerV3Client$upload$0.call(Unknown Source)
+	at org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:74)
+Caused: java.io.IOException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:77)
+Caused: java.io.IOException: Upload of maven component with GAV [com.github.vspiewak:log-generator:0.0.1-SNAPSHOT] failed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:255)
+	at org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$_upload_closure2.doCall(ComponentUploaderNxrm3.groovy:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
+	at groovy.lang.Closure.call(Closure.java:414)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.callClosureForMapEntry(DefaultGroovyMethods.java:5276)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.each(DefaultGroovyMethods.java:2117)
+	at org.codehaus.groovy.runtime.dgm$163.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:274)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3.upload(ComponentUploaderNxrm3.groovy:54)
+	at org.sonatype.nexus.ci.nxrm.v3.ComponentUploaderNxrm3$upload.callCurrent(Unknown Source)
+	at org.sonatype.nexus.ci.nxrm.ComponentUploader.uploadComponents(ComponentUploader.groovy:84)
+	at org.sonatype.nexus.ci.nxrm.ComponentUploader$uploadComponents.call(Unknown Source)
+	at org.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep.perform(NexusPublisherBuildStep.groovy:70)
+	at org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:80)
+	at org.jenkinsci.plugins.workflow.steps.CoreStep$Execution.run(CoreStep.java:67)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1$1.call(SynchronousNonBlockingStepExecution.java:50)
+	at hudson.security.ACL.impersonate(ACL.java:290)
+	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution$1.run(SynchronousNonBlockingStepExecution.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Finished: FAILURE

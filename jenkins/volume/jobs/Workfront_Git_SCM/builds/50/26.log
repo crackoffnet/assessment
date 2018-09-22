@@ -1,0 +1,218 @@
+[java_app] Running shell script
++ mvn clean package sonar:sonar
+[INFO] Scanning for projects...
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (4 KB at 6.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+3/25 KB   5/25 KB   8/25 KB   11/25 KB   13/25 KB   16/25 KB   19/25 KB   21/25 KB   24/25 KB   25/25 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 KB at 118.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom
+3/6 KB     6/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom (6 KB at 40.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
+3/27 KB   6/27 KB   9/27 KB   11/27 KB   14/27 KB   16/27 KB   19/27 KB   22/27 KB   25/27 KB   27/27 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar (27 KB at 187.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom
+3/21 KB    3/21 KB   6/21 KB   7/21 KB   10/21 KB   11/21 KB   14/21 KB   17/21 KB   20/21 KB   21/21 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom (21 KB at 129.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+3/122 KB   5/122 KB   8/122 KB   11/122 KB   13/122 KB   16/122 KB   19/122 KB   21/122 KB   24/122 KB   27/122 KB   29/122 KB   32/122 KB   36/122 KB   40/122 KB   44/122 KB   48/122 KB   52/122 KB   56/122 KB   60/122 KB   64/122 KB   68/122 KB   72/122 KB   76/122 KB   80/122 KB   84/122 KB   88/122 KB   92/122 KB   96/122 KB   100/122 KB   104/122 KB   108/122 KB   112/122 KB   116/122 KB   120/122 KB   122/122 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar (122 KB at 570.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.pom
+4/5 KB       5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.pom (5 KB at 29.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.jar
+3/31 KB   5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.7/maven-antrun-plugin-1.7.jar (31 KB at 220.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.pom
+1/17 KB    4/17 KB   5/17 KB   8/17 KB   9/17 KB   12/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.pom (17 KB at 110.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.jar
+3/212 KB   5/212 KB   8/212 KB   11/212 KB   13/212 KB   16/212 KB   19/212 KB   21/212 KB   24/212 KB   27/212 KB   29/212 KB   32/212 KB   36/212 KB   40/212 KB   44/212 KB   48/212 KB   52/212 KB   56/212 KB   60/212 KB   64/212 KB   68/212 KB   72/212 KB   76/212 KB   80/212 KB   84/212 KB   88/212 KB   92/212 KB   96/212 KB   100/212 KB   104/212 KB   108/212 KB   112/212 KB   116/212 KB   120/212 KB   124/212 KB   128/212 KB   132/212 KB   136/212 KB   140/212 KB   144/212 KB   148/212 KB   152/212 KB   156/212 KB   160/212 KB   164/212 KB   168/212 KB   172/212 KB   176/212 KB   180/212 KB   184/212 KB   188/212 KB   192/212 KB   196/212 KB   200/212 KB   204/212 KB   208/212 KB   212/212 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.4.1/maven-assembly-plugin-2.4.1.jar (212 KB at 1016.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.pom
+4/12 KB      8/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.pom (12 KB at 81.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar
+4/150 KB   8/150 KB   12/150 KB   16/150 KB   20/150 KB   24/150 KB   28/150 KB   32/150 KB   36/150 KB   40/150 KB   44/150 KB   48/150 KB   52/150 KB   56/150 KB   60/150 KB   64/150 KB   68/150 KB   72/150 KB   76/150 KB   80/150 KB   84/150 KB   88/150 KB   92/150 KB   96/150 KB   100/150 KB   104/150 KB   108/150 KB   112/150 KB   116/150 KB   120/150 KB   124/150 KB   128/150 KB   132/150 KB   136/150 KB   140/150 KB   144/150 KB   148/150 KB   150/150 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.jar (150 KB at 1004.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.3.2/maven-release-plugin-2.3.2.pom
+1/10 KB      4/10 KB   7/10 KB   10/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.3.2/maven-release-plugin-2.3.2.pom (10 KB at 63.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.3.2/maven-release-2.3.2.pom
+3/9 KB     4/9 KB   7/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/2.3.2/maven-release-2.3.2.pom (9 KB at 56.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.3.2/maven-release-plugin-2.3.2.jar
+3/44 KB   5/44 KB   8/44 KB   11/44 KB   13/44 KB   16/44 KB   19/44 KB   21/44 KB   24/44 KB   27/44 KB   29/44 KB   32/44 KB   36/44 KB   40/44 KB   44/44 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.3.2/maven-release-plugin-2.3.2.jar (44 KB at 277.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.pom
+           [WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/org/eclipse/m2e/lifecycle-mapping/1.0.0/lifecycle-mapping-1.0.0.jar
+           [WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Could not find artifact org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in central (https://repo.maven.apache.org/maven2)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+3/14 KB    5/14 KB   8/14 KB   11/14 KB   13/14 KB   13/14 KB   3/20 KB   13/14 KB   5/20 KB   13/14 KB   8/20 KB   13/14 KB   11/20 KB   13/14 KB   13/20 KB   14/14 KB   13/20 KB   14/14 KB   16/20 KB   14/14 KB   19/20 KB   14/14 KB   20/20 KB                         Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 KB at 40.8 KB/sec)
+                      Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (20 KB at 59.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml
+1/2 KB                2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/maven-metadata.xml (2 KB at 7.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.pom (2 KB at 7.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom
+3/33 KB   5/33 KB   8/33 KB   11/33 KB   13/33 KB   16/33 KB   19/33 KB   21/33 KB   24/33 KB   27/33 KB   29/33 KB   32/33 KB   33/33 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom (33 KB at 229.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.pom
+3/9 KB     5/9 KB   8/9 KB   9/9 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.pom (9 KB at 65.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/46/parent-46.pom
+3/31 KB   5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/46/parent-46.pom (31 KB at 216.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.jar
+3/43 KB    5/43 KB   8/43 KB   11/43 KB   13/43 KB   16/43 KB   19/43 KB   21/43 KB   24/43 KB   27/43 KB   29/43 KB   32/43 KB   36/43 KB   40/43 KB   43/43 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/maven/sonar-maven-plugin/3.5.0.1254/sonar-maven-plugin-3.5.0.1254.jar (43 KB at 309.0 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ log-generator ---
+[INFO] Deleting /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce) @ log-generator ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ log-generator ---
+[INFO] Compiling 7 source files to /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ log-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ log-generator ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ log-generator ---
+[INFO] Building jar: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.1:shade (default) @ log-generator ---
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.5 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.30 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.0.13 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.0.13 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT.jar with /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/log-generator-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/dependency-reduced-pom.xml
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building log-generator 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 is missing, no dependency information available
+[WARNING] Failed to retrieve plugin descriptor for org.eclipse.m2e:lifecycle-mapping:1.0.0: Plugin org.eclipse.m2e:lifecycle-mapping:1.0.0 or one of its dependencies could not be resolved: Failure to find org.eclipse.m2e:lifecycle-mapping:jar:1.0.0 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ log-generator ---
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+1/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3 KB at 21.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (4 KB at 28.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.pom
+3/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.pom (6 KB at 38.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.10.0.1189/sonar-scanner-api-parent-2.10.0.1189.pom
+3/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api-parent/2.10.0.1189/sonar-scanner-api-parent-2.10.0.1189.pom (5 KB at 35.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/41/parent-41.pom
+3/31 KB   6/31 KB   9/31 KB   11/31 KB   14/31 KB   16/31 KB   19/31 KB   22/31 KB   25/31 KB   27/31 KB   30/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/parent/parent/41/parent-41.pom (31 KB at 217.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+3/18 KB    6/18 KB   9/18 KB   11/18 KB   14/18 KB   16/18 KB   18/18 KB              Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (18 KB at 126.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+3/31 KB    5/31 KB   8/31 KB   11/31 KB   13/31 KB   16/31 KB   19/31 KB   21/31 KB   24/31 KB   27/31 KB   29/31 KB   31/31 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 KB at 219.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar
+Downloading: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.jar
+Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+3/28 KB    5/28 KB   8/28 KB   11/28 KB   13/28 KB   16/28 KB   19/28 KB   19/28 KB   3/240 KB   21/28 KB   3/240 KB   24/28 KB   3/240 KB   24/28 KB   5/240 KB   27/28 KB   5/240 KB   27/28 KB   8/240 KB   27/28 KB   11/240 KB   27/28 KB   13/240 KB   27/28 KB   16/240 KB   27/28 KB   19/240 KB   27/28 KB   21/240 KB   27/28 KB   24/240 KB   27/28 KB   27/240 KB   27/28 KB   29/240 KB   27/28 KB   32/240 KB   27/28 KB   36/240 KB   27/28 KB   40/240 KB   27/28 KB   44/240 KB   27/28 KB   48/240 KB   28/28 KB   48/240 KB   28/28 KB   52/240 KB   28/28 KB   56/240 KB   28/28 KB   60/240 KB   28/28 KB   64/240 KB   28/28 KB   68/240 KB   28/28 KB   72/240 KB   28/28 KB   76/240 KB   28/28 KB   80/240 KB   28/28 KB   84/240 KB   28/28 KB   88/240 KB   28/28 KB   92/240 KB   28/28 KB   96/240 KB   28/28 KB   100/240 KB   28/28 KB   104/240 KB   28/28 KB   108/240 KB   28/28 KB   112/240 KB   28/28 KB   116/240 KB   28/28 KB   120/240 KB   28/28 KB   124/240 KB   28/28 KB   128/240 KB   28/28 KB   132/240 KB   28/28 KB   136/240 KB   28/28 KB   140/240 KB   28/28 KB   144/240 KB   28/28 KB   148/240 KB   28/28 KB   152/240 KB   28/28 KB   156/240 KB   28/28 KB   160/240 KB   28/28 KB   164/240 KB   28/28 KB   168/240 KB   28/28 KB   172/240 KB   28/28 KB   176/240 KB                           Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 KB at 135.9 KB/sec)
+180/240 KB              184/240 KB   188/240 KB   192/240 KB   196/240 KB   200/240 KB   204/240 KB   208/240 KB   212/240 KB   216/240 KB   220/240 KB   224/240 KB   228/240 KB   232/240 KB   236/240 KB   240/240 KB   3/278 KB   240/240 KB   6/278 KB   240/240 KB   9/278 KB   240/240 KB   11/278 KB   240/240 KB   3/568 KB   11/278 KB   240/240 KB   5/568 KB   11/278 KB   240/240 KB   8/568 KB   11/278 KB   240/240 KB   11/568 KB   11/278 KB   240/240 KB   13/568 KB   11/278 KB   240/240 KB                                        Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar (240 KB at 863.4 KB/sec)
+13/568 KB   14/278 KB                13/568 KB   16/278 KB   16/568 KB   16/278 KB   16/568 KB   19/278 KB   19/568 KB   19/278 KB   19/568 KB   22/278 KB   21/568 KB   22/278 KB   21/568 KB   25/278 KB   21/568 KB   27/278 KB   21/568 KB   30/278 KB   24/568 KB   30/278 KB   27/568 KB   30/278 KB   27/568 KB   32/278 KB   29/568 KB   32/278 KB   32/568 KB   32/278 KB   32/568 KB   36/278 KB   32/568 KB   40/278 KB   32/568 KB   44/278 KB   32/568 KB   48/278 KB   36/568 KB   48/278 KB   40/568 KB   48/278 KB   44/568 KB   48/278 KB   48/568 KB   48/278 KB   48/568 KB   52/278 KB   48/568 KB   56/278 KB   48/568 KB   60/278 KB   48/568 KB   64/278 KB   52/568 KB   64/278 KB   56/568 KB   64/278 KB   60/568 KB   64/278 KB   64/568 KB   64/278 KB   68/568 KB   64/278 KB   72/568 KB   64/278 KB   76/568 KB   64/278 KB   80/568 KB   64/278 KB   80/568 KB   68/278 KB   80/568 KB   72/278 KB   80/568 KB   76/278 KB   80/568 KB   80/278 KB   80/568 KB   84/278 KB   80/568 KB   88/278 KB   80/568 KB   92/278 KB   80/568 KB   96/278 KB   84/568 KB   96/278 KB   88/568 KB   96/278 KB   92/568 KB   96/278 KB   96/568 KB   96/278 KB   100/568 KB   96/278 KB   100/568 KB   100/278 KB   104/568 KB   100/278 KB   104/568 KB   104/278 KB   108/568 KB   104/278 KB   108/568 KB   108/278 KB   112/568 KB   108/278 KB   112/568 KB   112/278 KB   112/568 KB   116/278 KB   112/568 KB   120/278 KB   112/568 KB   124/278 KB   112/568 KB   128/278 KB   116/568 KB   128/278 KB   116/568 KB   132/278 KB   120/568 KB   132/278 KB   120/568 KB   136/278 KB   124/568 KB   136/278 KB   124/568 KB   140/278 KB   128/568 KB   140/278 KB   128/568 KB   144/278 KB   128/568 KB   148/278 KB   128/568 KB   152/278 KB   128/568 KB   156/278 KB   128/568 KB   160/278 KB   132/568 KB   160/278 KB   136/568 KB   160/278 KB   140/568 KB   160/278 KB   144/568 KB   160/278 KB   148/568 KB   160/278 KB   152/568 KB   160/278 KB   156/568 KB   160/278 KB   160/568 KB   160/278 KB   164/568 KB   160/278 KB   168/568 KB   160/278 KB   172/568 KB   160/278 KB   176/568 KB   160/278 KB   176/568 KB   164/278 KB   176/568 KB   168/278 KB   176/568 KB   172/278 KB   176/568 KB   176/278 KB   180/568 KB   176/278 KB   184/568 KB   176/278 KB   188/568 KB   176/278 KB   192/568 KB   176/278 KB   192/568 KB   180/278 KB   192/568 KB   184/278 KB   192/568 KB   188/278 KB   192/568 KB   192/278 KB   192/568 KB   196/278 KB   192/568 KB   200/278 KB   192/568 KB   204/278 KB   192/568 KB   208/278 KB   196/568 KB   208/278 KB   200/568 KB   208/278 KB   204/568 KB   208/278 KB   208/568 KB   208/278 KB   212/568 KB   208/278 KB   216/568 KB   208/278 KB   220/568 KB   208/278 KB   224/568 KB   208/278 KB   224/568 KB   212/278 KB   224/568 KB   216/278 KB   224/568 KB   220/278 KB   224/568 KB   224/278 KB   224/568 KB   228/278 KB   224/568 KB   232/278 KB   224/568 KB   236/278 KB   224/568 KB   240/278 KB   224/568 KB   244/278 KB   224/568 KB   248/278 KB   224/568 KB   252/278 KB   224/568 KB   256/278 KB   224/568 KB   260/278 KB   224/568 KB   264/278 KB   224/568 KB   268/278 KB   224/568 KB   269/278 KB   228/568 KB   269/278 KB   232/568 KB   269/278 KB   236/568 KB   269/278 KB   240/568 KB   273/278 KB   240/568 KB   273/278 KB   240/568 KB   277/278 KB   240/568 KB   278/278 KB   244/568 KB   278/278 KB   248/568 KB   278/278 KB   252/568 KB   278/278 KB   256/568 KB   278/278 KB   260/568 KB   278/278 KB   264/568 KB   278/278 KB   268/568 KB   278/278 KB   272/568 KB   278/278 KB   276/568 KB   278/278 KB   280/568 KB   278/278 KB   284/568 KB   278/278 KB   288/568 KB   278/278 KB   292/568 KB   278/278 KB   296/568 KB   278/278 KB   300/568 KB   278/278 KB   304/568 KB   278/278 KB   308/568 KB   278/278 KB   312/568 KB   278/278 KB   316/568 KB   278/278 KB   320/568 KB   278/278 KB   324/568 KB   278/278 KB   328/568 KB   278/278 KB   332/568 KB   278/278 KB   336/568 KB   278/278 KB   340/568 KB   278/278 KB   344/568 KB   278/278 KB   348/568 KB   278/278 KB   352/568 KB   278/278 KB   356/568 KB   278/278 KB   360/568 KB   278/278 KB   364/568 KB   278/278 KB   368/568 KB   278/278 KB   372/568 KB   278/278 KB   376/568 KB   278/278 KB   380/568 KB   278/278 KB   384/568 KB   278/278 KB   388/568 KB   278/278 KB   392/568 KB   278/278 KB   396/568 KB   278/278 KB   400/568 KB   278/278 KB   404/568 KB   278/278 KB   408/568 KB   278/278 KB   412/568 KB   278/278 KB   416/568 KB   278/278 KB   420/568 KB   278/278 KB   424/568 KB   278/278 KB   428/568 KB   278/278 KB   432/568 KB   278/278 KB   436/568 KB   278/278 KB   440/568 KB   278/278 KB   444/568 KB   278/278 KB   448/568 KB   278/278 KB   452/568 KB   278/278 KB   456/568 KB   278/278 KB   460/568 KB   278/278 KB   464/568 KB   278/278 KB   468/568 KB   278/278 KB   472/568 KB   278/278 KB   476/568 KB   278/278 KB   480/568 KB   278/278 KB   484/568 KB   278/278 KB   488/568 KB   278/278 KB   492/568 KB   278/278 KB   496/568 KB   278/278 KB   500/568 KB   278/278 KB   504/568 KB   278/278 KB   508/568 KB   278/278 KB   512/568 KB   278/278 KB   516/568 KB   278/278 KB   520/568 KB   278/278 KB   524/568 KB   278/278 KB   528/568 KB   278/278 KB   532/568 KB   278/278 KB   536/568 KB   278/278 KB   540/568 KB   278/278 KB   544/568 KB   278/278 KB   548/568 KB   278/278 KB   552/568 KB   278/278 KB   556/568 KB   278/278 KB   560/568 KB   278/278 KB   564/568 KB   278/278 KB   568/568 KB   278/278 KB   568/568 KB   278/278 KB                             Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (278 KB at 497.4 KB/sec)
+                          Downloaded: https://repo.maven.apache.org/maven2/org/sonarsource/scanner/api/sonar-scanner-api/2.10.0.1189/sonar-scanner-api-2.10.0.1189.jar (568 KB at 905.7 KB/sec)
+[INFO] User cache: /root/.sonar/cache
+[INFO] SonarQube version: 6.7.1
+[INFO] Default locale: "en", source code encoding: "UTF-8"
+[INFO] Publish mode
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=92ms
+[INFO] Server id: AWX9hAoyhqGHiu3x7V-G
+[INFO] User cache: /root/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=42ms
+[INFO] Download sonar-flex-plugin-2.3.jar
+[INFO] Download sonar-csharp-plugin-6.5.0.3766.jar
+[INFO] Download sonar-javascript-plugin-3.2.0.5506.jar
+[INFO] Download sonar-java-plugin-4.15.0.12310.jar
+[INFO] Download sonar-php-plugin-2.11.0.2485.jar
+[INFO] Download sonar-python-plugin-1.8.0.1496.jar
+[INFO] Download sonar-scm-git-plugin-1.3.0.869.jar
+[INFO] Download sonar-scm-svn-plugin-1.6.0.860.jar
+[INFO] Download sonar-typescript-plugin-1.1.0.1079.jar
+[INFO] Download sonar-xml-plugin-1.4.3.1027.jar
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=104ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=40ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=675ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=26ms
+[INFO] Project key: com.github.vspiewak:log-generator
+[INFO] -------------  Scan log-generator
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=39ms
+[INFO] Base dir: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app
+[INFO] Working dir: /var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/sonar
+[INFO] Source paths: dependency-reduced-pom.xml, src/main/java
+[INFO] Source encoding: UTF-8, default locale: en
+[INFO] Index files
+[INFO] 8 files indexed
+[INFO] Quality profile for java: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor JavaSquidSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 6
+[INFO] JavaClasspath initialization
+[INFO] JavaClasspath initialization (done) | time=7ms
+[INFO] JavaTestClasspath initialization
+[INFO] JavaTestClasspath initialization (done) | time=1ms
+[INFO] Java Main Files AST scan
+[INFO] 7 source files to be analyzed
+[INFO] Java Main Files AST scan (done) | time=1117ms
+[INFO] 7/7 source files have been analyzed
+[INFO] Java Test Files AST scan
+[INFO] 0 source files to be analyzed
+[INFO] Java Test Files AST scan (done) | time=1ms
+[INFO] 0/0 source files have been analyzed
+[INFO] Sensor JavaSquidSensor [java] (done) | time=1453ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [/var/jenkins_home/workspace/Workfront_Git_SCM/java_app/target/surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=2ms
+[INFO] Sensor JaCoCoSensor [java]
+[INFO] Sensor JaCoCoSensor [java] (done) | time=0ms
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 1 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=48ms
+[INFO] 1/1 source files have been analyzed
+[INFO] Sensor XML Sensor [xml]
+[INFO] Sensor XML Sensor [xml] (done) | time=145ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=22ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=29ms
+[INFO] SCM provider for this project is: git
+[INFO] 1 files to be analyzed
+[INFO] 0/1 files analyzed
+[WARNING] Missing blame information for the following files:
+[WARNING]   * dependency-reduced-pom.xml
+[WARNING] This may lead to missing/broken features in SonarQube
+[INFO] 3 files had no CPD blocks
+[INFO] Calculating CPD for 4 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 80ms, dir size=112 KB
+[INFO] Analysis reports compressed in 16ms, zip size=39 KB
+[INFO] Analysis report uploaded in 64ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://sonarqube:9000/dashboard/index/com.github.vspiewak:log-generator
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://sonarqube:9000/api/ce/task?id=AWX-tUrY7mZ4nRxBTusR
+[INFO] Task total time: 4.164 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.403 s
+[INFO] Finished at: 2018-09-22T00:36:58+00:00
+[INFO] Final Memory: 40M/647M
+[INFO] ------------------------------------------------------------------------

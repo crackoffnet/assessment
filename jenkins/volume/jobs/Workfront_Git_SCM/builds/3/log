@@ -1,0 +1,42 @@
+Started by user [8mha:////4EAHvVihVrLa5saKr3FGjUfCfmVGvFanZYZiKK/SR2xFAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKK2vVLpcJb0ykYmByZOBLSc1L70kw4eBubQop4RByCcrsSxRPycxL10/uKQoMy/dGmicFJpxzhAa3d4CIEOghIFbv7Q4tUg/MSU3Mw8Ai0KlHMAAAAA=[0mGaregin Ayvazyan
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4EU6seAfScyYNH2BqzGvppynSW73oJ9F/zAqPK3sQ/xVAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKK2vVLpcJb0ykYmByZOBLSc1L70kw4eBubQop4RByCcrsSxRPycxL10/uKQoMy/dGmicFJpxzhAa3d4CIIO9hEFYPzk/t6C0JLVIXyM3sRhIa+oDAFAjsbDIAAAA[0mJenkins in /var/jenkins_home/workspace/Workfront_Git_SCM
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...[WS-CLEANUP] done
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Pull git repositories)
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] checkout
+Cloning the remote Git repository
+Cloning repository https://github.com/myfear/play-java-maven
+ > git init /var/jenkins_home/workspace/Workfront_Git_SCM/java_app # timeout=10
+Fetching upstream changes from https://github.com/myfear/play-java-maven
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/myfear/play-java-maven +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/myfear/play-java-maven # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/myfear/play-java-maven # timeout=10
+Fetching upstream changes from https://github.com/myfear/play-java-maven
+ > git fetch --tags --progress https://github.com/myfear/play-java-maven +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 35fcc82271131480d9812ef63a1df2d2e4cd066a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 35fcc82271131480d9812ef63a1df2d2e4cd066a
+Commit message: "Additional Description"
+ > git rev-list --no-walk 35fcc82271131480d9812ef63a1df2d2e4cd066a # timeout=10
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...[WS-CLEANUP] done
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] emailext
+Sending email to: garegin.ayvazyan@hotmail.com
+Error sending to the following VALID addresses: garegin.ayvazyan@hotmail.com
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4ED0woHeroDR2MVm4dCipVH73ZlU9y0ffKiJkAvoMxi6AAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

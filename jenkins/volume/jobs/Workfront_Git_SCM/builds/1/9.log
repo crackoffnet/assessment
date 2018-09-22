@@ -1,0 +1,18 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/myfear/play-java-maven
+ > git init /var/jenkins_home/workspace/Workfront_Git_SCM/java_app # timeout=10
+Fetching upstream changes from https://github.com/myfear/play-java-maven
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/myfear/play-java-maven +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/myfear/play-java-maven # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/myfear/play-java-maven # timeout=10
+Fetching upstream changes from https://github.com/myfear/play-java-maven
+ > git fetch --tags --progress https://github.com/myfear/play-java-maven +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 35fcc82271131480d9812ef63a1df2d2e4cd066a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 35fcc82271131480d9812ef63a1df2d2e4cd066a
+Commit message: "Additional Description"
+First time build. Skipping changelog.
